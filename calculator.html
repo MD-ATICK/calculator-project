@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <span class="box one"></span>
+        <span class="box two"></span>
+        <span class="box three"></span>
+        <span class="box four"></span>
+        <span class="box six"></span>
+        <span class="box seven"></span>
+        <span class="box eight"></span>
+        <span class="box nine"></span>
+        <span class="box ten"></span>
+    </div>
+
+    <div class="calculator">
+        <form action="">
+            <input type="text" placeholder="calculate" name="ans">
+            <div class="buttons">
+                <input type="button" value="AC" onclick="form.ans.value = ' ' ">
+                <input type="button" value="DEL" onclick="form.ans.value = form.ans.value.substr(0 , form.ans.value.length - 1) ">
+                <input type="button" value="%" onclick="form.ans.value +='%' ">
+                <input type="button" value="/" onclick=" form.ans.value += '/' ">
+            </div>
+            <div class="buttons">
+                <input type="button" value="7" onclick="form.ans.value += '7' ">
+                <input type="button" value="8" onclick="form.ans.value += '8' ">
+                <input type="button" value="9" onclick="form.ans.value += '9' ">
+                <input type="button" value="*" onclick="form.ans.value += '*' ">
+            </div>
+            <div class="buttons">
+                <input type="button" value="4" onclick="form.ans.value += '4' ">
+                <input type="button" value="5" onclick="form.ans.value += '5' ">
+                <input type="button" value="6" onclick="form.ans.value += '6' ">
+                <input type="button" value="+" onclick="form.ans.value += '+' ">
+            </div>
+            <div class="buttons">
+                <input type="button" value="1" onclick="form.ans.value += '1' ">
+                <input type="button" value="2" onclick="form.ans.value += '2' ">
+                <input type="button" value="3" onclick="form.ans.value += '3' ">
+                <input type="button" value="-" onclick="form.ans.value += '-' ">
+            </div>
+            <div class="buttons">
+                <input type="button" value="0" onclick="form.ans.value += '0' ">
+                <input type="button" value="00" onclick="form.ans.value += '00' ">
+                <input type="button" value="." onclick="form.ans.value += '.' ">
+                <input type="button" value="=" onclick="form.ans.value = eval(form.ans.value) ">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // let calculator = document.querySelector(".calculator")
+        // let ans = document.querySelector(".ans") 
+    </script>
+</body>
+</html>
